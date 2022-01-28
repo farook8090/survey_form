@@ -1,0 +1,374 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%), url(../img/survey-form-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Title */
+
+#title h1 {
+    font-size: 535%;
+    margin-top: 3%;
+}
+
+#description {
+    font-size: 110%;
+    margin-top: 0.8%;
+    font-weight: 500;
+}
+
+/* Container */
+
+.container {
+    margin: 0 auto;
+    margin-top: 5px !important;
+    width: 60%;
+    height: 100%;
+    border: 2px solid #7c3e5e;
+    border-radius: 10px;
+}
+
+/* Form */
+
+form {
+    padding: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    margin-top: 5px;
+}
+
+#survey-form {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    border-width: 2px 3px;
+    border-image: linear-gradient(45deg, rgba(100, 57, 242, 1) 0%, rgba(242, 55, 55, 1) 100%);
+    border-image-slice: 9;
+    border-style: solid;
+    background-image: linear-gradient(217deg, rgb(194 55 55 / 80%), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgb(113 222 113 / 80%), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgb(45 45 210 / 80%), rgba(0, 0, 255, 0) 70.71%);
+}
+
+#name-label {
+    margin-top: 9px;
+    margin-bottom: 8px;
+    display: block;
+    margin-left: 21px;
+    font-size: 30px;
+}
+
+#email-label {
+    margin-top: 9px;
+    margin-bottom: 8px;
+    display: block;
+    margin-left: 21px;
+    font-size: 30px;
+}
+
+#number-label {
+    margin-top: 9px;
+    margin-bottom: 8px;
+    display: block;
+    margin-left: 21px;
+    font-size: 30px;
+}
+
+#dropdown1 {
+    margin-left: 21px;
+    font-size: 30px;
+}
+
+#dropdown {
+    border-radius: 10px;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: 2px;
+    left: 2px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+select {
+    margin-top: 9px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: 21px;
+    font-size: 20px;
+    width: 95%;
+    padding: 1.5%;
+}
+
+
+legend {
+    font-size: 150%;
+}
+
+#name {
+    margin: 0.5rem 1.5rem;
+    width: 95%;
+    padding: 0.8rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+#email {
+    margin: 0.5rem 1.5rem;
+    width: 95%;
+    padding: 0.8rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+#number {
+    margin: 0.5rem 1.5rem;
+    width: 95%;
+    padding: 0.8rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+/* Recommend */
+
+#recommend {
+    margin-top: 9px;
+    margin-bottom: 8px;
+    display: block;
+    margin-left: 21px;
+    font-size: 30px;
+}
+
+#label {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.input-radio {
+    display: inline-block;
+    margin-left: 2.5rem;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+/* Checkbox */
+
+#checkbox {
+    margin-top: 9px;
+    margin-bottom: 8px;
+    display: block;
+    margin-left: 21px;
+    font-size: 30px;
+}
+
+.input-checkbox {
+    display: inline-block;
+    margin-left: 2.5rem;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+/* Text area */
+
+#comment {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    display: block;
+    margin-left: 21px;
+    font-size: 30px
+}
+
+.text-area {
+    width: 95%;
+    margin: 1.5rem;
+}
+
+textarea[placeholder] {
+    font-size: 18px;
+}
+
+/* Submit */
+
+#submit {
+    margin-left: 1.5rem;
+    width: 95%;
+    height: 100%;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+/* Utilities */
+
+.text-center {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* Min Screen 501px and Max Screen 1024px */
+
+@media screen and (min-device-width: 501px) and (max-device-width: 1024px) {
+
+    #name {
+        width: 87%;
+    }
+
+    #email {
+        width: 87%;
+    }
+
+    #number {
+        width: 87%;
+    }
+
+    #name-label {
+        font-size: 25px;
+    }
+
+    #email-label {
+        font-size: 25px;
+    }
+
+    #number-label {
+        font-size: 25px;
+    }
+
+    #dropdown {
+        font-size: 25px;
+    }
+
+    #recommend {
+        font-size: 25px;
+    }
+
+    #checkbox {
+        font-size: 25px;
+    }
+
+    #comment {
+        font-size: 24px;
+    }
+
+    #submit {
+        width: 87%;
+    }
+
+    .text-area {
+        width: 87%;
+    }
+
+    #dropdown1 {
+        font-size: 17px;
+        border-radius: 10px;
+    }
+
+    textarea[placeholder] {
+        font-size: 15px;
+    }
+}
+
+/* Max Screen 500px */
+
+@media screen and (max-width:500px) {
+
+    #survey-form {
+        width: 100%;
+    }
+
+    #name {
+        width: 87%;
+    }
+
+    #email {
+        width: 87%;
+    }
+
+    #number {
+        width: 87%;
+    }
+
+    #name-label {
+        font-size: 20px;
+    }
+
+    #email-label {
+        font-size: 20px;
+    }
+
+    #number-label {
+        font-size: 20px;
+    }
+
+    #dropdown {
+        font-size: 20px;
+    }
+
+    select {
+        width: 87%;
+    }
+
+    #recommend {
+        font-size: 20px;
+    }
+
+    #label {
+        margin-bottom: 0.3rem;
+        font-size: 18px;
+    }
+
+    #checkbox {
+        font-size: 20px;
+    }
+
+    #comment {
+        font-size: 20px;
+    }
+
+    .text-area {
+        width: 85%;
+    }
+
+    #submit {
+        width: 85%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #dropdown1 {
+        font-size: 17px;
+        border-radius: 10px;
+    }
+
+    textarea [placeholder] {
+        font-size: 14px;
+    }
+}
